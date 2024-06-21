@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Nicolás</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            form, table {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <ul>
+        <li><a href="index.html">PRINCIPAL</a></li>
+    </ul>
+    <h1>Me presento...</h1>
+    <p><i>Hola, mi nombre es <b>NICOLÁS VALENCIA PÉREZ</b>. Soy un estudiante del CECYTE Plantel Chignahuapan.</i></p>
+
+    <h1>Tabla</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>E-Mail / Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Omar</td>
+                <td>Villalba</td>
+                <td>Ordoñez</td>
+                <td>o.villalbao.chg.22@cecyte.edu.mx</td>
+            </tr>
+            <tr>
+                <td>Julián</td>
+                <td>Morales</td>
+                <td>Márquez</td>
+                <td>j.moralesm.chg.22@cecyte.edu.mx</td>
+            </tr>
+            <tr>
+                <td>Nicolás</td>
+                <td>Valencia</td>
+                <td>Pérez</td>
+                <td>7971034843</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Formularios</h1>
+    <p>Formulario de contacto</p>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

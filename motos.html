@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Motos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            form, table {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tienda de Motos</h1>
+    <ul>
+        <li><a href="index.html">PRINCIPAL</a></li>
+    </ul>
+    <h2>BIENVENIDOS</h2>
+    <p><i>Bienvenidos a nuestra tienda de motos, donde encontrarás una amplia variedad de modelos que te encantarán.</i></p>
+    <img src="motos1.jpg" alt="Motos">
+
+    <hr>
+
+    <h2>Productos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio en UNIDAD</th>
+                <th>Precio en MAYOREO (5 unidades)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Moto deportiva</td>
+                <td>$5,000</td>
+                <td>$4,500</td>
+            </tr>
+            <tr>
+                <td>Moto cruiser</td>
+                <td>$6,000</td>
+                <td>$5,500</td>
+            </tr>
+            <tr>
+                <td>Moto touring</td>
+                <td>$7,000</td>
+                <td>$6,500</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formularios</h2>
+    <h3>Formulario de precios</h3>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio" name="precio">
+        <label for="tipo">Tipo de moto:</label>
+        <input type="text" id="tipo" name="tipo">
+        <label for="cantidad">Cantidad:</label>
+        <select id="cantidad" name="cantidad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
